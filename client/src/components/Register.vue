@@ -1,24 +1,22 @@
 <template>
-  <v-layout column>
-    <v-flex xs6 offset-xs3>
-      <div class="white elevation-2">
-        <v-toolbar flat dense class="teal" dark>
-          <v-toolbar-title>Register</v-toolbar-title>
-        </v-toolbar>
-        <div class="pl-r pr-4 pb-2 pt-2">
-          <input type="email" name="email" v-model="email"placeholder="email" />
-          <br>
-          <input type="password" name="password" v-model="password" placeholder="password" />
-          <br>
-          <div class="error" v-html="error">
-            <br>
-          </div>
-          <v-btn  class="teal" @click="register">Register</v-btn>
-        </div>
 
+
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Register</span>
+              <input type="email" name="email" v-model="email" placeholder="email" />
+
+              <input type="password" name="password" v-model="password" placeholder="password" />
+              <div class="error" v-html="error"></div>
+              <button  class="teal btn" @click="register">Register</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </v-flex>
-  </v-layout>
+
+
 
 
 
@@ -53,5 +51,8 @@ export default {
 <style scoped>
 .error{
   color:#FF0000;
+}
+.row{
+  margin-top: 30px;
 }
 </style>
