@@ -8,7 +8,7 @@
               <span class="card-title">Register</span>
               <input type="email" name="email" v-model="email" placeholder="email" />
 
-              <input type="password" name="password" v-model="password" placeholder="password" />
+              <input type="password" name="password" v-model="password" placeholder="password" autocomplete="new-password" />
               <div class="error" v-html="error"></div>
               <button  class="teal btn" @click="register">Register</button>
             </div>

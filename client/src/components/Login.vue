@@ -10,7 +10,7 @@
 
               <input type="password" name="password" v-model="password" placeholder="password" />
               <div class="error" v-html="error"></div>
-              <button  class="teal btn" @click="register">Login</button>
+              <button  class="teal btn" @click="login">Login</button>
             </div>
           </div>
         </div>
