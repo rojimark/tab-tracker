@@ -5,10 +5,14 @@ import App from './App'
 import router from './router'
 // import Vuetify from 'vuetify'
 // import 'vuetify/dist/vuetify.min.css'
+import {sync} from 'vuex-router-sync'
+import store from '@/store/store'
 import Materialize from 'materialize-css'
 import 'materialize-css/dist/css/materialize.min.css'
 
 Vue.config.productionTip = false
+
+sync(store, router)
 
 // Vue.use(Vuetify)
 Vue.use(Materialize)
@@ -16,6 +20,7 @@ Vue.use(Materialize)
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
