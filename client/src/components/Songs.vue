@@ -26,9 +26,7 @@
           <p>{{song.album}}</p>
           <div class="card-image">
             <img :src="song.albumImage" alt="">
-
           </div>
-<p>{{song.album}}</p>
           <div class="card-action">
             <a class="btn" @click = "navigateTo({
               name: 'song',
