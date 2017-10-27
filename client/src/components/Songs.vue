@@ -6,8 +6,8 @@
         <h4 class="left white-text">Songs</h4>
       </div>
       <div class="col s12 m10 offset-m1 white-text">
-        <div class="col s12 m3 card blue-grey darken-1" v-for="song in songs">
-          <h2>{{song.title}}</h2>
+        <div class="col s12 m3 card small blue-grey darken-1" v-for="song in songs">
+          <h6>{{song.title}}</h6>
           <p>{{song.artist}} | {{song.album}}</p>
           <div class="card-image">
             <img :src="song.albumImage" alt="">
