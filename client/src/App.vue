@@ -14,7 +14,7 @@ export default {
   }
 }
 </script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
