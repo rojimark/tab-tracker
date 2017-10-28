@@ -6,7 +6,7 @@
         <h5 class="white-text">Songs</h5>
 
 
-  <div class="fixed-action-btn">
+  <div class="fixed-action-btn" v-if="$store.state.isUserLoggedIn">
     <a class="btn-floating btn-large teal">
       <i class="large material-icons">mode_edit</i>
     </a>
@@ -20,7 +20,7 @@
 
       </div>
       <div class="col s12 m12 offset-m1 white-text">
-        <div class="col s12 m2 card small blue-grey darken-1 song-card" v-for="song in songs">
+        <div class="hoverable col s12 m2 card small blue-grey darken-1 song-card" v-for="song in songs">
           <h6 class="song-title">{{song.title}}</h6>
           <p>{{song.artist}}</p>
           <p>{{song.album}}</p>
