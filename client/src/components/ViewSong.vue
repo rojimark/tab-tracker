@@ -20,6 +20,8 @@
         :player-width="400"
         :video-id="song.youtubeId">
         </youtube>
+        <br>
+        <router-link :to="{ name: 'edit', params: {} }"><a class="waves-effect waves-light btn"><i class="material-icons left">edit</i>Edit</a></router-link>
       </div>
       <div class="col m6 s12 offset-m1 pull-m1 right-pane blue-grey card large white-text">
         <h6>Tabs and Lyrics</h6>
