@@ -44,5 +44,6 @@ export default {
 <style lang="css">
 .search{
   margin-top: 5px;
+  position: sticky;
 }
 </style>
